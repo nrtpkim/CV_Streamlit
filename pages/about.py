@@ -12,13 +12,13 @@ def write():
     
     st.markdown(
             """
-"_I am a competitor at SuperAIEngineer competition_"
+"_I'm a bronze medalist in the Super AI Engineer competition._"
 
 
-A Data processing with 1.5 years of experience in managing data, developing reports, and troubleshooting data issues. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A Data processing with 1.5 years of experience in managing data, developing reports, and troubleshooting data issues. 
 Spending more than 1 year to upskill and join to competition about AI/ML and Data science competition. 
 Always on the lookout for new technologies, I am passionate about AI technology and data science to drive business.
- 
+ ***
 **Open to work **\n
 **Data Analyst · Data Scientist · Machine Learning Engineer · Artificial Intelligence Engineer**
 

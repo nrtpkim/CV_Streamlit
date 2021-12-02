@@ -3,14 +3,16 @@ import streamlit as st
 import pages.about
 import pages.projects
 import pages.rewards
-
+import pages.skills
 
 import resources.ast as ast
 
 PAGES = {
     "About Me": pages.about,
     "Projects" : pages.projects,
+    "Skill": pages.skills,
     "Rewards": pages.rewards,
+
 
 }
 

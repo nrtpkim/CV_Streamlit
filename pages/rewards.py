@@ -4,42 +4,116 @@ import streamlit as st
 def write():
     """Used to write the page in the app.py file"""
     st.title("Recommendations :memo:")
+    
+    
+    ### True Lab Startup Sandbox Hackaton
     st.markdown(
-            """### Anantha Krishna Rajpurohit
-**Senior Analyst | Boston Consulting Group(BCG) | April 5, 2020** | [**LinkedIn**](https://www.linkedin.com/in/anantha-krishna-rajpurohit/)\n
-Abhishek joined as a fresher into the team. He brings in a lot of energy into the team and gives his 
-100%. He was reliable to finish the job at hand and actively reach out for help from peers and managers. 
-Always looked to up-skill on a regular basis and actively looked for new skills in the analytics space. 
-Since then he grew over three years at Mu Sigma to be able to move on the bigger responsibilities, 
-mentoring juniors, managing modules and delivering high quality results. With his recent addition of MS 
-in business analytics, I recommend him for any position that require depth in analytics, 
-reliability and project management skills
- 
+        """### 1 of 4 teams True Lab Startup Sandbox Hackaton
+* Image Recognition | DeepSec | May 2021
+        """,
+            unsafe_allow_html=True,)
+    
+    col1, col2, col3 = st.columns([1,4,1])
+    with col2:
+        st.image("./resources/images/rewards/TrueHackaton_1.jpg")
 
-### Abhinav Dasgupta
-**Deputy Director | Myntra Jabong | April 5, 2020** | [**LinkedIn**](https://www.linkedin.com/in/abhinav-dasgupta-a0670422/)  \n
-Abhishek was part of the team working with a leading manufacturing giant which I was leading. 
-Abhishek brought a great sense of maturity and work ethic coupled with excellent analytical skills 
-to the team and ensured we constantly created a good experience for the client stakeholders. 
-We solved some of the most complex problems for the business and he was pivotal in making it happen. 
-In addition, he has a continuous zeal to learn and improve himself, which was also reflected in his 
-decision to pursue masters in the area of analytics. I really enjoyed working with Abhishek 
-during his time at Mu Sigma and think he will be a top asset to any team that he will be part of.
+    st.markdown(
+        """
 
-### Tara Chamberlain
-**Senior Operations Manager| AT&T | February 5, 2020** | [**LinkedIn**](https://www.linkedin.com/in/tara-chamberlain-832b991a/)  \n
-Abhishek was a member of my Capstone team at UCONN and proved to be an invaluable asset. He was not 
-only adept at all data cleaning, modeling, and visualization methods that our team utilized, but
- also took the lead in our research. He ended up uncovering key information that no one, not even our 
- professor or sponsors, was aware of. The team that I run at my current company doesn't 
-     have any openings, but it we did, I would be happy to have him join our organization.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Under Startup Sandbox, the True Lab Startup Sandbox project is organized for new-generation startups 
+and entrepreneurs interested in robotics and AI are invited to join the hack idea and recruit team members with True Group.
 
+Selected to participate in Hackathon, a total of 10 teams (3-5 people per team)
 
+And will only accept 4 teams with the best results to join the project.
+        """,
+            unsafe_allow_html=True,)
+    
+    
+    ### SuperAIEngineer Competition
+    st.markdown(
+        """### Bronze Medal - SuperAIEngineer Competition
+        """,
+            unsafe_allow_html=True,)
+    col1, col2, col3 = st.columns([1,4,1])
+    with col2:
+        st.image("./resources/images/rewards/AI_Engineer_1.jpg")
+    
+    
+    st.markdown(
+        """
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Super-AI engineer development program is a project 
+to train and develop people in the AI profession to develop the country 
+and find the top winner of Thailand. The program has selected (5%) of experienced people nationwide (2059 candidates). 
+Those who qualify for each round will receive different competition problems and full-time work with leading companies 
+under the Artificial Intelligence Association of Thailand (AiAT) supervision. 
+[**See credential**](https://aiat.or.th/cert/) ID: SuperAI01-036
+        """,
+            unsafe_allow_html=True,)
+    
+    ### Kaggle Competition
+    st.markdown(
+        """### Kaggle Competition
+* [**Goto Kaggle Profile**](https://www.kaggle.com/naratipboonbanyen/competitions)
+        """,
+            unsafe_allow_html=True,)
+    
+    col1, col2, col3 = st.columns([1,4,1])
+    with col2:
+        st.image("./resources/images/rewards/Kaggle_1.jpg")
+    
 
-""",
-            unsafe_allow_html=True,
-        )
+    
+    ### Nielsen: Simpli Excellent Reward 
+    st.markdown(
+        """### Nielsen: Simpli Excellent Reward 
+        """,
+            unsafe_allow_html=True,)
+    
+    col1, col2, col3, col4, col5 = st.columns([1,4,4,4,1])
+    with col2:
+        st.image("./resources/images/rewards/Nielsen_1.jpg")
+    with col3:
+        st.image("./resources/images/rewards/Nielsen_2.jpg")
+    with col4:
+        st.image("./resources/images/rewards/Nielsen_3.jpg")
+        
+    st.markdown(
+        """
+* Excellence process improvement | Jun 2020 [**See credential**](https://drive.google.com/file/d/1qC5iRpSJjXz8jmaNh1-iZwbSgiVIB6rQ/view?usp=sharing)
+* Hard working to achieve and exceed quarter's revenue targets. | Jul 2020 [**See credential**](https://drive.google.com/file/d/1zt8iR1ORv3a5A34r5KzUi8Z9ffTqqLYN/view?usp=sharing)
+* Support revenue with an "Outward Mindset" | Dec 2020 [**See credential**](https://drive.google.com/file/d/1ljAWq8zNKwroPHGwwhwCadvAe2wCWSdc/view?usp=sharing)
+        """,
+            unsafe_allow_html=True,)
+    
+    
+    
+    
+    ### Microsoft Office Specialist Excel 2016
+    st.markdown(
+    """### Microsoft Office Specialist Excel 2016
+* Excel 2016: Core Data Analysis, Manipulation, and Presentation | Oct 2019.
+    """,
+        unsafe_allow_html=True,)
+    col1, col2, col3 = st.columns([1,4,1])
+    
+    with col2:
+        st.image("./resources/images/rewards/Excel_1.jpg")
+    st.markdown(
+        """
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Microsoft Excel 2016 Certification exam earners have a fundamental 
+understanding of Excel 2016 and the ability to complete tasks independently. 
+Earners have proven they can create and edit a workbook with multiple sheets, and use graphic 
+elements to represent data visually including professional-looking budgets, 
+financial statements, performance charts, and data-entry logs. Earners include students, business professionals, 
+clerical workers, bookkeepers, educators, and others. 
+[**See credential**](https://www.credly.com/badges/74ae2a84-0ec7-4099-bf4d-40a37da69410/linked_in_profile)
+        """,
+            unsafe_allow_html=True,)
+    
+    
 if __name__ == "__main__":
     main()
 

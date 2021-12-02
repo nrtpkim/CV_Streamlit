@@ -5,22 +5,17 @@ def write():
     """Used to write the page in the app.py file"""
     st.title("Skills :hammer_and_wrench:")
     st.markdown(
-            """## Languages
-- R
+            """
+## Languages
 - Python
 - SQL 
-- VBA
+- VBA for MS Excel
 
 ## Platforms and Libraries
-- **SAS** - JMP, Enterprise Miner and Enterprise Guide
-- **MS Office** - Excel, Powerpoint, Project, Word
-- **Python** - Pandas, Numpy, Skicit Learn,Scipy, NLTK, Tensorflow, Keras, Streamlit, Dash, Plotly, Matplotlib, Seaborn, etc.
-- **R** - Shiny, Dplyr
-- **SQL** - MS SQL, PostgreSQL,HIVE, HANA, Teradata 
+- **MS Office** - Excel, Powerpoint, Word, Access
+- **Python** - Pandas, Numpy, Skicit Learn, Scipy, Tensorflow, Keras, Opencv, PyThaiNLP, Streamlit, FastAPI, Matplotlib, Seaborn, etc.
+- **SQL** - MS SQL, MS Access, Oracle,  
 - Tableau
-- PowerBI
-- Qlik View
-- JIRA, Confluence
 
 ## Analytical Skills
 - Statistical Data Analysis
@@ -30,21 +25,8 @@ def write():
 - Natural Language Processing
 - Web Scraping
 
-## AWS Stack
+## Huawei Stack
 - EC2
-- Lambda
-- S3
-- RDS - Redshift, Aurora, MS SQL
-- Dynamo DB
-- Sagemaker
-- Lex, Polly
-- Cloudfront
-- IAM
-            
-
-_I am a Random Forest in the World of Overfitting_
-
-
 
 """,
             unsafe_allow_html=True,
