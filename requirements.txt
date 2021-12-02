@@ -29,9 +29,10 @@ tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.0
 tensorflow==2.4.0
 tensorflow-estimator==2.4.0
-torch==1.7.1+cu110 -f https://download.pytorch.org/whl/torch_stable.html
-torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
-torchvision==0.8.2+cu110 -f https://download.pytorch.org/whl/torch_stable.html
+--find-links https://download.pytorch.org/whl/torch_stable.html
+torch==1.7.1+cu110
+torchaudio==0.7.2
+torchvision==0.8.2+cu110
 tqdm==4.62.3
 
 
