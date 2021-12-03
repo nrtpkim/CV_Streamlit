@@ -1,5 +1,5 @@
 import streamlit as st
-from streamlit_webrtc import webrtc_streamer
+# from streamlit_webrtc import webrtc_streamer
 import cv2
 import numpy as np
 import torch
@@ -24,8 +24,6 @@ mot_tracker = Sort() ## --> realtime tracker
 
 def webcam_input(run, option):
     
-#     option = st.selectbox('Please Select Mode', ('non', 'Subtraction', 'Human_detection', 'AEIOU_Game'))
-#     run = st.checkbox('Open cam')
     FRAME_WINDOW = st.image([])
     camera = cv2.VideoCapture(0)
    
