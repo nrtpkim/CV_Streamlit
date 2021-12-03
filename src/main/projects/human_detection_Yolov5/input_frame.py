@@ -5,7 +5,7 @@ import numpy as np
 import torch
 import pandas as pd
 
-from src.main.projects.human_detection_Yolov5.sort import *
+# from src.main.projects.human_detection_Yolov5.sort import *
 '''
     --> Function AEIOU_game ใช้สำหรับ logic เกมส์ flow chart คร่าวๆ
     
@@ -19,7 +19,7 @@ from src.main.projects.human_detection_Yolov5.sort import *
 
 model = torch.hub.load('ultralytics/yolov5', 'custom', path='./src/main/projects/human_detection_Yolov5/model/yolov5s6.pt') # YoloV5 PRetrain
 bgsub = cv2.createBackgroundSubtractorKNN(10) 
-mot_tracker = Sort() ## --> realtime tracker
+# mot_tracker = Sort() ## --> realtime tracker
 
 
 def webcam_input(run, option):
