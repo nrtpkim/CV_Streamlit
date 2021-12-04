@@ -34,6 +34,8 @@ torch==1.7.1+cu110
 torchaudio==0.7.2
 torchvision==0.8.2+cu110
 tqdm==4.62.3
+filterpy==1.4.5
+lap==0.4.0
 pytk
 
 
