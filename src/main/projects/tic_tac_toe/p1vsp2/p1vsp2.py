@@ -10,7 +10,7 @@ _win_point = 5
 X = 1
 O = 2
 space = 0
-mark_space = '🗯'
+mark_space = '⚪'
 
 def boardinit():
     board = np.full((8, 8), space, dtype=str)

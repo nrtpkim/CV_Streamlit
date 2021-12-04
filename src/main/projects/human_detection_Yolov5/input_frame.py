@@ -1,10 +1,7 @@
 import streamlit as st
 from streamlit_webrtc import (
-    AudioProcessorBase,
     ClientSettings,
-#     RTCConfiguration,
     VideoProcessorBase,
-    WebRtcMode,
     webrtc_streamer,
 )
 import cv2
@@ -33,6 +30,7 @@ model = torch.hub.load('ultralytics/yolov5', 'custom', path='./src/main/projects
 # bgsub = cv2.createBackgroundSubtractorKNN(10) 
 mot_tracker = Sort() ## --> realtime tracker
 
+# Setting for online connect
 WEBRTC_CLIENT_SETTINGS = ClientSettings(
     rtc_configuration={"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]},
     media_stream_constraints={"video": True, "audio": False},
@@ -90,8 +88,6 @@ def webcam_input(option):
     
     webrtc_ctx = webrtc_streamer(
         key="opencv-filter",
-#         mode=WebRtcMode.SENDRECV,
-#         rtc_configuration=RTC_CONFIGURATION,
         client_settings=WEBRTC_CLIENT_SETTINGS,
         video_processor_factory=OpenCVVideoProcessor,
         media_stream_constraints={"video": True, "audio": False},

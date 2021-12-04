@@ -1,7 +1,6 @@
 """Projects page shown when the user enters the application"""
 import streamlit as st
 from src.main.projects.human_detection_Yolov5 import input_frame
-import tensorflow
 from src.main.projects.tic_tac_toe import main_tictactoe
 
 def write():
@@ -17,9 +16,6 @@ def write():
     """,unsafe_allow_html=True,)
     
     option_cam = st.selectbox('Please Select Mode', ("Default", "Edges", "Human_Detect"))
-#     run_cam = st.checkbox('Open Webcam')
-#     if run_cam:
-#         st.write('comming soon')
     demo_obj_detection = input_frame.webcam_input(option_cam)
     
     
