@@ -19,8 +19,8 @@ def write():
     option_cam = st.selectbox('Please Select Mode', ('non', 'Subtraction', 'Human_detection'))
     run_cam = st.checkbox('Open Webcam')
     if run_cam:
-        st.write('comming soon')
-#         demo_obj_detection = input_frame.webcam_input(run_cam, option_cam)
+#         st.write('comming soon')
+        demo_obj_detection = input_frame.webcam_input(run_cam, option_cam)
     
     
     st.markdown('***')
