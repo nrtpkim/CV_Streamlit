@@ -23,9 +23,7 @@ def write():
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Under Startup Sandbox, the True Lab Startup Sandbox project is organized for new-generation startups 
 and entrepreneurs interested in robotics and AI are invited to join the hack idea and recruit team members with True Group.
 
-Selected to participate in Hackathon, a total of 10 teams (3-5 people per team)
-
-And will only accept 4 teams with the best results to join the project.
+Selected to participate in Hackathon, a total of 10 teams (3-5 people per team). Only accept 4 teams with the best results to join the project.
         """,
             unsafe_allow_html=True,)
     
@@ -33,6 +31,7 @@ And will only accept 4 teams with the best results to join the project.
     ### SuperAIEngineer Competition
     st.markdown(
         """### Bronze Medal - SuperAIEngineer Competition
+* Bronze Medal | 10 Oct 2019 - 31 July 2020
         """,
             unsafe_allow_html=True,)
     col1, col2, col3 = st.columns([1,4,1])

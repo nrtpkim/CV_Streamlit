@@ -15,7 +15,7 @@ def write():
 "_I'm a bronze medalist in the Super AI Engineer competition._"
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A Data processing with 1.5 years of experience in managing data, developing reports, and troubleshooting data issues. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A Data processing with 1.8 years of experience in managing data, developing reports, and troubleshooting data issues. 
 Spending more than 1 year to upskill and join to competition about AI/ML and Data science competition. 
 Always on the lookout for new technologies, I am passionate about AI technology and data science to drive business.
  ***
