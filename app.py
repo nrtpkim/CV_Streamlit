@@ -8,8 +8,8 @@ import pages.skills
 import resources.ast as ast
 
 PAGES = {
-    "About Me": pages.about,
     "Projects" : pages.projects,
+    "About Me": pages.about,
     "Skill": pages.skills,
     "Rewards": pages.rewards,
 

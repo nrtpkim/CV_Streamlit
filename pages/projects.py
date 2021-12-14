@@ -6,6 +6,11 @@ from src.main.projects.tic_tac_toe import main_tictactoe
 def write():
     """Used to write the page in the app.py file"""
     st.title("Projects - :male-construction-worker: ")
+
+    st.markdown("""&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  You can call me Kim and this is some part of the project I was able to do. \n 
+If want to read more, check on my [**GitHub**](https://github.com/kimlolipop).
+     """,unsafe_allow_html=True,)
+#     st.write("You can call me Kim and this is my part of the project I was able to do.")
     
     ### Realtime Human Detection
     st.markdown(""" ### Realtime Human Detection
