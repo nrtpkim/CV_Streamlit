@@ -35,7 +35,7 @@ mot_tracker = Sort() ## --> realtime tracker
 bgsub = cv2.createBackgroundSubtractorKNN(10) 
 # face_detector
 face_detector = dlib.get_frontal_face_detector()
-sp = dlib.shape_predictor("./src/main/projects/human_detection_Yolov5/model/shape_predictor_68_face_landmarks.dat")
+# sp = dlib.shape_predictor("./src/main/projects/human_detection_Yolov5/model/shape_predictor_68_face_landmarks.dat")
 
 # Setting for online connect
 WEBRTC_CLIENT_SETTINGS = ClientSettings(
@@ -138,12 +138,13 @@ def face_detection(frame):
         y2 = face.bottom() # bottom point
 #         print(x1,x2,y1,y2)
         cv2.rectangle(img=frame, pt1=(x1, y1), pt2=(x2, y2), color=(0, 255, 0), thickness=4)
-
-        shape = sp(gray, face)
-        for n in range(0, 68):
-            x = shape.part(n).x
-            y = shape.part(n).y
-            cv2.circle(frame, (x, y), 4, (255, 0, 0), -1)
+        
+        # Landmark
+#         shape = sp(gray, face)
+#         for n in range(0, 68):
+#             x = shape.part(n).x
+#             y = shape.part(n).y
+#             cv2.circle(frame, (x, y), 4, (255, 0, 0), -1)
             
     return frame
 
