@@ -54,7 +54,11 @@ under the Artificial Intelligence Association of Thailand (AiAT) supervision.
     ### Kaggle Competition
     st.markdown(
         """### Kaggle Competition
-* [**Goto Kaggle Profile**](https://www.kaggle.com/naratipboonbanyen/competitions)
+* Manufacturing Output and Break Time Prediction from Videos :Rank 1/37
+* Credit card preference :Rank 2/7
+* Classify given image into 2 classes : Rank 12/179
+
+Read more on [**Kaggle Profile**](https://www.kaggle.com/naratipboonbanyen/competitions)
         """,
             unsafe_allow_html=True,)
     
