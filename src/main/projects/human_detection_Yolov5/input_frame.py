@@ -9,7 +9,7 @@ import numpy as np
 import torch
 import pandas as pd
 import av
-import dlib
+# import dlib
 
 from src.main.projects.human_detection_Yolov5.sort import *
 try:
@@ -34,7 +34,7 @@ mot_tracker = Sort() ## --> realtime tracker
 # motion detector
 bgsub = cv2.createBackgroundSubtractorKNN(10) 
 # face_detector
-face_detector = dlib.get_frontal_face_detector()
+# face_detector = dlib.get_frontal_face_detector()
 # sp = dlib.shape_predictor("./src/main/projects/human_detection_Yolov5/model/shape_predictor_68_face_landmarks.dat")
 
 # Setting for online connect
@@ -65,9 +65,9 @@ def webcam_input(option):
             elif self.type == "Subtraction":
                 img = cv2.GaussianBlur(img,(5,5),0)
                 img = cv2.cvtColor(Subtraction(img),cv2.COLOR_GRAY2BGR)
-            elif self.type == "Face_Detector":
-                img = cv2.GaussianBlur(img,(5,5),0)
-                img = face_detection(img)
+#             elif self.type == "Face_Detector":
+#                 img = cv2.GaussianBlur(img,(5,5),0)
+#                 img = face_detection(img)
                 
                         
             return av.VideoFrame.from_ndarray(img, format="bgr24")
@@ -136,7 +136,6 @@ def face_detection(frame):
         y1 = face.top() # top point
         x2 = face.right() # right point
         y2 = face.bottom() # bottom point
-#         print(x1,x2,y1,y2)
         cv2.rectangle(img=frame, pt1=(x1, y1), pt2=(x2, y2), color=(0, 255, 0), thickness=4)
         
         # Landmark

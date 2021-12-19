@@ -19,7 +19,7 @@ def write():
     - tracted boxes by sort algorithm
     """,unsafe_allow_html=True,)
     
-    option_cam = st.selectbox('Please Select Mode', ("Default", "Subtraction", "Human_Detector","Face_Detector"))
+    option_cam = st.selectbox('Please Select Mode', ("Default", "Subtraction"))
     demo_obj_detection = input_frame.webcam_input(option_cam)
     
     
