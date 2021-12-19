@@ -9,6 +9,7 @@ import numpy as np
 import torch
 import pandas as pd
 import av
+import dlib
 
 from src.main.projects.human_detection_Yolov5.sort import *
 try:
@@ -27,9 +28,14 @@ except ImportError:
 
 '''
 
+# human detector
 model = torch.hub.load('ultralytics/yolov5', 'custom', path='./src/main/projects/human_detection_Yolov5/model/yolov5s6.pt') # YoloV5 PRetrain
-bgsub = cv2.createBackgroundSubtractorKNN(10) 
 mot_tracker = Sort() ## --> realtime tracker
+# motion detector
+bgsub = cv2.createBackgroundSubtractorKNN(10) 
+# face_detector
+face_detector = dlib.get_frontal_face_detector()
+sp = dlib.shape_predictor("./src/main/projects/human_detection_Yolov5/model/shape_predictor_68_face_landmarks.dat")
 
 # Setting for online connect
 WEBRTC_CLIENT_SETTINGS = ClientSettings(
@@ -43,7 +49,7 @@ def webcam_input(option):
 
 
     class OpenCVVideoProcessor(VideoProcessorBase):
-        type: Literal["Default", "Edges", "Human_Detect"]
+        type: Literal["Default", "Subtraction", "Human_Detector", "Face_Detector"]
 
         def __init__(self) -> None:
             self.type = "Default"
@@ -53,12 +59,16 @@ def webcam_input(option):
 
             if self.type == "Default":
                 pass
-            elif self.type == "Human_Detect":
+            elif self.type == "Human_Detector":
                 img = cv2.GaussianBlur(img,(5,5),0)
                 img = Human_detection(img)
             elif self.type == "Subtraction":
                 img = cv2.GaussianBlur(img,(5,5),0)
                 img = cv2.cvtColor(Subtraction(img),cv2.COLOR_GRAY2BGR)
+            elif self.type == "Face_Detector":
+                img = cv2.GaussianBlur(img,(5,5),0)
+                img = face_detection(img)
+                
                         
             return av.VideoFrame.from_ndarray(img, format="bgr24")
     
@@ -116,7 +126,30 @@ def Human_detection(frame, confidence = 0.6):
     return frame
 
 
+def face_detection(frame):
+    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    faces = face_detector(gray)
+    for face in faces:
+        
 
+        x1 = face.left() # left point
+        y1 = face.top() # top point
+        x2 = face.right() # right point
+        y2 = face.bottom() # bottom point
+#         print(x1,x2,y1,y2)
+        cv2.rectangle(img=frame, pt1=(x1, y1), pt2=(x2, y2), color=(0, 255, 0), thickness=4)
+
+        shape = sp(gray, face)
+        for n in range(0, 68):
+            x = shape.part(n).x
+            y = shape.part(n).y
+            cv2.circle(frame, (x, y), 4, (255, 0, 0), -1)
+            
+    return frame
+
+            
+            
+            
 def AEIOU_game(frame):
         
     # Detect + sort
