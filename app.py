@@ -7,20 +7,26 @@ import pages.skills
 
 import resources.ast as ast
 
+
 PAGES = {
-    "Projects" : pages.projects,
     "About Me": pages.about,
+    "Projects" : pages.projects,
     "Skill": pages.skills,
     "Rewards": pages.rewards,
-
 
 }
 
 def main():
     """Main function of App"""
-    st.sidebar.title("Navigation")
-    selection = st.sidebar.radio("Go to", list(PAGES.keys()))
-
+    
+    
+#     st.sidebar.title("Navigation")
+#     selection = st.sidebar.radio("Go to", list(PAGES.keys()))
+    st.title("Navigation")
+    selection = st.selectbox("Go to", list(PAGES.keys()))
+    st.write("***")
+    
+    
     page = PAGES[selection]
     
     with st.spinner(f"Loading {selection} ..."):
@@ -33,7 +39,11 @@ def main():
         [email me](mailto:nrtp.boon@gmail.com) or reach out 
         to me on [LinkedIn](https://www.linkedin.com/in/naratip-boonbanyen-86778717b/)
 """)
+    
+    
+#     app.run()
 
 
 if __name__ == "__main__":
     main()
+    
