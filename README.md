@@ -1,5 +1,5 @@
 # Streamlit Resume 
-V1.0.0t
+V1.0.0T
 
 * Used streamlit to create CV profile and show demo of AI/ML Project.
 * hosted it on an free server streamlit.
