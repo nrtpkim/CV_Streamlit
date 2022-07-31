@@ -30,7 +30,7 @@ except ImportError:
 
 # human detector
 model = torch.hub.load('ultralytics/yolov5', 'custom', path='./src/main/projects/human_detection_Yolov5/model/yolov5s6.pt') # YoloV5 PRetrain
-mot_tracker = Sort() ## --> realtime tracker
+# mot_tracker = Sort() ## --> realtime tracker
 # motion detector
 bgsub = cv2.createBackgroundSubtractorKNN(10) 
 # face_detector
