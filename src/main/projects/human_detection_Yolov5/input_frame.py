@@ -11,7 +11,7 @@ import pandas as pd
 import av
 # import dlib
 
-from src.main.projects.human_detection_Yolov5.sort import *
+# from src.main.projects.human_detection_Yolov5.sort import *
 try:
     from typing import Literal
 except ImportError:
@@ -110,18 +110,19 @@ def Human_detection(frame, confidence = 0.6):
         x2 = int(df2[['x2']].iloc[i].values[0])
         y2 = int(df2[['y2']].iloc[i].values[0])
         detections.append([x1, y1, x2, y2])
+        cv2.rectangle(frame, (int(x1), int(y1)), (int(x2), int(y2)), (0, 255, 0), 3)
     
     
-    # Tracker by Sort
-    try:
-        boxes_ids = mot_tracker.update(np.array(detections))
-        for box_id in boxes_ids:
-            x1, y1, x2, y2, id = box_id
-            cv2.putText(frame, str(id), (int(x1), int(y1) - 15), cv2.FONT_HERSHEY_PLAIN, 2, (255, 0, 0), 2)
-            cv2.rectangle(frame, (int(x1), int(y1)), (int(x2), int(y2)), (0, 255, 0), 3)
+    ### Tracker by Sort
+    # try:
+    #     boxes_ids = mot_tracker.update(np.array(detections))
+    #     for box_id in boxes_ids:
+    #         x1, y1, x2, y2, id = box_id
+    #         cv2.putText(frame, str(id), (int(x1), int(y1) - 15), cv2.FONT_HERSHEY_PLAIN, 2, (255, 0, 0), 2)
+    #         cv2.rectangle(frame, (int(x1), int(y1)), (int(x2), int(y2)), (0, 255, 0), 3)
 
-    except:
-        pass
+    # except:
+    #     pass
         
     return frame
 
