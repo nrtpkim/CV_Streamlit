@@ -35,9 +35,9 @@ tqdm
 pytk
 click==8.0.4
 scikit-image
-tensorflow==2.4.0
-tensorflow-estimator==2.4.0
-Keras==2.4.0
+tensorflow==2.5.0
+tensorflow-estimator==2.5.0
+Keras==2.5.0
 #h5py==2.10.0
 #tensorflow
 #tensorflow-estimator
