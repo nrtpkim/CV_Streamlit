@@ -2,7 +2,6 @@ dlib-bin
 base58==2.1.0
 h5py==2.10.0
 imageio==2.12.0
-Keras==2.4.0
 Keras-Preprocessing==1.1.2
 matplotlib==3.4.3
 matplotlib-inline==0.1.2
@@ -37,8 +36,12 @@ tqdm==4.62.3
 pytk
 click==8.0.4
 scikit-image
-tensorflow==2.5.0
-tensorflow-estimator==2.5.0
+#tensorflow==2.4.0
+#tensorflow-estimator==2.4.0
+#Keras==2.4.0
+tensorflow
+tensorflow-estimator
+Keras
 
 
 
