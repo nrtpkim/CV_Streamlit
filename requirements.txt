@@ -43,6 +43,7 @@ tensorflow
 tensorflow-estimator
 Keras
 h5py
+ipython
 
 
 
