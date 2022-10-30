@@ -37,8 +37,8 @@ tqdm==4.62.3
 pytk
 click==8.0.4
 scikit-image
-tensorflow==2.50
-tensorflow-estimator==2.50
+tensorflow==2.5.0
+tensorflow-estimator==2.5.0
 
 
 
