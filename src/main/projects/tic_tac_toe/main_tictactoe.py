@@ -1,5 +1,5 @@
 from src.main.projects.tic_tac_toe import p1vsp2
-from src.main.projects.tic_tac_toe import PlayerVsBot
+# from src.main.projects.tic_tac_toe import PlayerVsBot
 # import PlayerVsBot
 import streamlit as st
 
@@ -12,7 +12,7 @@ def run_tictaktor(run, option):
         if option == "Player1 vs Player2":
             p1vsp2.show()
 
-        elif option == "Player vs Tic Tak Toe(Ai)":
-            PlayerVsBot.show()
+        # elif option == "Player vs Tic Tak Toe(Ai)":
+        #     PlayerVsBot.show()
 
     
