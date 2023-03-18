@@ -45,6 +45,8 @@ Keras==2.5.0rc0
 h5py
 ipython
 psutil==5.9.1
+ipywidgets==7.7.1
+notebook==6.4.12
 
 
 
