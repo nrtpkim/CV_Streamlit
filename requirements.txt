@@ -25,11 +25,13 @@ streamlit-webrtc==0.34.1
 tensorboard==2.7.0
 tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.0
---find-links https://download.pytorch.org/whl/torch_stable.html
-torch==1.7.1+cu110
+# --find-links https://download.pytorch.org/whl/torch_stable.html
+# torch==1.7.1+cu110
+# torchaudio==0.7.2
+# torchvision==0.8.2+cu110
+torch==1.7.1 
+torchvision==0.8.2 
 torchaudio==0.7.2
-torchvision==0.8.2+cu110
-cudatoolkit==11.0
 tqdm
 # filterpy==1.4.5
 # lap==0.4.0
