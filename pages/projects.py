@@ -1,7 +1,7 @@
 """Projects page shown when the user enters the application"""
 import streamlit as st
 from src.main.projects.human_detection_Yolov5 import input_frame
-# from src.main.projects.tic_tac_toe import main_tictactoe
+from src.main.projects.tic_tac_toe import main_tictactoe
 
 def write():
     """Used to write the page in the app.py file"""
@@ -91,17 +91,17 @@ def write():
     st.markdown('***')
 
     ### Tic-tak-toe games 10x10 Dimension
-    # st.markdown(""" ### Tic-tak-toe games 8x8 Dimension
-    # - Rule: 5 lines in a row, column, Diagonals will win.
-    # - Used DNN to train RL(Just test pipeline. The model still not good)
-    # """,unsafe_allow_html=True,)
+    st.markdown(""" ### Tic-tak-toe games 8x8 Dimension
+    - Rule: 5 lines in a row, column, Diagonals will win.
+    - Used DNN to train RL(Just test pipeline. The model still not good)
+    """,unsafe_allow_html=True,)
     
-    # option_tictactoe = st.selectbox('Please Select', ('Player1 vs Player2', 'Player vs Tic Tak Toe(Ai)'))
-    # run_tictaktoe = st.checkbox('Start Game')
-    # if run_tictaktoe:
-    #     main_tictactoe.run_tictaktor(run_tictaktoe, option_tictactoe)
+    option_tictactoe = st.selectbox('Please Select', ('Player1 vs Player2', 'Player vs Tic Tak Toe(Ai)'))
+    run_tictaktoe = st.checkbox('Start Game')
+    if run_tictaktoe:
+        main_tictactoe.run_tictaktor(run_tictaktoe, option_tictactoe)
     
-    # st.markdown('***')
+    st.markdown('***')
     
     ### Dashboard Design on open source data
     st.markdown(""" ### VRP Problem with Ant Colony Algorithm
