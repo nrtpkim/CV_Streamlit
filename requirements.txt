@@ -44,6 +44,7 @@ Keras==2.5.0rc0
 #Keras
 h5py
 ipython
+psutil==5.9.1
 
 
 
